@@ -1,22 +1,119 @@
 /* global style */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
 
-/* set background page image or colour */
-body {
-    background-color: purple;
-    background-image: url("../images/cassette-5986249_1280.jpg");
-    /* font-family: ; */
-}
-
+/* override default settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* make font-size 62.5% so all rem sizes can be set at multiples of 10 */
     font-size: 62.5%;
-    font-family: 'Poppins', "Open Sans", sans-serif;
+   
 
 }
 
+/* set background page image or colour */
+body {
+     background-image: url("../images/cassette-5986249_1280.jpg");
+    background-color: purple;
+    font-family: "Open Sans", sans-serif;
+    color: #3a3a3a;
+}
+
+/* set font styles and sizes for headings and text */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Poppins, sans-serif;
+    margin-bottom: 1 rem;
+}
+
+h1 {
+    font-size: 5rem;
+
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* set full page flexbox container */
+.container {
+       
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    /* keep everything centred as screen width changes */
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: lightgray;
+
+}
+
+#home {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#home-btn {
+    
+    font-size: 4rem;
+    font-weight: bold;
+    /* border: 0.1rem solid black; */
+    padding: 2rem;
+    width: 30rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* play button styling */
+
+.fa-play {
+    margin-left: 1rem;
+    font-size: 8rem;
+}
+
+/* button styling */
+.btn {
+    
+   text-align: center;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    /* box-shadow: ;
+    transform: ;
+    transition: ; */
+}
 
 
