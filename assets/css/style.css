@@ -49,11 +49,11 @@ h4 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 /* set full page flexbox container */
-.container {
+.quiz-container {
        
     width: 100vw;
     height: 100vh;
@@ -109,11 +109,88 @@ p {
 
 }
 
-.btn:hover {
+/* .btn:hover {
     cursor: pointer;
-    /* box-shadow: ;
+    box-shadow: ;
     transform: ;
-    transition: ; */
+    transition: ;
+} */
+
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* counters container at top of quiz */
+.counter-container {
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* question container styling */
+.question-container {
+    
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* answer container styling */
+.answers-container {
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
+
+
+
+
+
+@media(min-width : 300px) and (max-width : 350px){
+    .quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .counter-container p{
+        font-size: 1rem;
+     }
+
+     .question-container{
+        height: 6rem;
+     }
+     .question-container h1{
+       font-size: 1rem;
+    }
+
+    
+@media(min-width : 350px) and (max-width : 700px){
+    .quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .counter-container p{
+         font-size: 1rem;
+     }
+ 
+     .question-container{
+         height: 8rem;
+     }
+ 
+     .question-container h1{
+         font-size: 1rem;
+      }
+ 
