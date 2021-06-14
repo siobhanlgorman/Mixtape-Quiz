@@ -1,6 +1,9 @@
+/* global style */
+
 body {
-    background-color: red;
+    background-color: purple;
     background-image: url("../images/cassette-5986249_1280.jpg");
+    /* font-family: ; */
 }
 
 * {
@@ -13,7 +16,7 @@ body {
 
 h1 {
     font-size: 2rem;
-    color: fff;
+    color: black;
     margin-bottom: 2rem;
 }
 
